@@ -1,0 +1,152 @@
+.footer {
+  padding-block: 48px max(40px, env(safe-area-inset-bottom));
+  background: var(--color-text);
+  color: color-mix(in srgb, var(--color-background) 80%, transparent);
+  font-size: 13px;
+}
+
+.inner {
+  display: grid;
+  gap: 24px;
+}
+
+.brand {
+  display: inline-block;
+  padding-block: 4px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-background);
+  text-decoration: none;
+}
+
+.tagline {
+  margin-top: 2px;
+}
+
+.contact,
+.business {
+  margin: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.contact > div,
+.business > div {
+  display: flex;
+  gap: 12px;
+}
+
+.contact dt {
+  flex-shrink: 0;
+  width: 56px;
+  opacity: 0.8;
+}
+
+.contact dd,
+.business dd {
+  margin: 0;
+}
+
+.contact a {
+  display: inline-block;
+  padding-block: 4px;
+  text-decoration: none;
+}
+
+.social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.social a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid color-mix(in srgb, var(--color-background) 25%, transparent);
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+.business {
+  padding-top: 20px;
+  border-top: 1px solid color-mix(in srgb, var(--color-background) 15%, transparent);
+  font-size: 12px;
+}
+
+.business > div {
+  gap: 10px;
+}
+
+.business dt {
+  flex-shrink: 0;
+  width: 88px;
+  opacity: 0.8;
+}
+
+.ftc {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 0 8px;
+  border: 1px solid color-mix(in srgb, var(--color-background) 30%, transparent);
+  border-radius: 4px;
+  font-size: 11px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 16px;
+}
+
+/* 개인정보처리방침은 눈에 띄게 표시 (개인정보보호위원회 작성지침 권고) */
+.privacy {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-weight: 700;
+  color: var(--color-background);
+  text-decoration: none;
+}
+
+.copyright {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+@media (min-width: 768px) {
+  .inner {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 48px;
+  }
+
+  .social {
+    grid-column: 2;
+    grid-row: 1;
+    justify-content: flex-end;
+    align-self: start;
+  }
+
+  .business,
+  .bottom {
+    grid-column: 1 / -1;
+  }
+
+  .business {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 24px;
+  }
+
+  .business dt {
+    width: auto;
+  }
+}

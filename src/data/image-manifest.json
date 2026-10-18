@@ -1,0 +1,68 @@
+{
+  "/images/about-artist.webp": {
+    "width": 980,
+    "height": 1226,
+    "widths": [
+      320,
+      480,
+      640,
+      800,
+      980
+    ]
+  },
+  "/images/hero-flower.webp": {
+    "width": 1101,
+    "height": 1977,
+    "widths": [
+      320,
+      480,
+      640,
+      800,
+      1101
+    ]
+  },
+  "/images/work-daisy-garden.webp": {
+    "width": 980,
+    "height": 1224,
+    "widths": [
+      320,
+      480,
+      640,
+      800,
+      980
+    ]
+  },
+  "/images/work-lotus-light.webp": {
+    "width": 980,
+    "height": 1224,
+    "widths": [
+      320,
+      480,
+      640,
+      800,
+      980
+    ]
+  },
+  "/images/work-peony-garden.webp": {
+    "width": 980,
+    "height": 1226,
+    "widths": [
+      320,
+      480,
+      640,
+      800,
+      980
+    ]
+  },
+  "/images/work-rose-photozone.webp": {
+    "width": 1092,
+    "height": 1092,
+    "widths": [
+      320,
+      480,
+      640,
+      800,
+      1092
+    ]
+  }
+}

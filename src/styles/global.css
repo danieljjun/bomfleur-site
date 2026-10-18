@@ -1,0 +1,191 @@
+/* Pretendard: 사이트에 쓰인 글자만 담은 서브셋 (scripts/subset-font.mjs가 빌드 때 생성) */
+@font-face {
+  font-family: 'Pretendard Variable';
+  font-weight: 400 800;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/pretendard-subset.woff2') format('woff2-variations'), url('/fonts/pretendard-subset.woff2') format('woff2');
+}
+
+/* 색상 변수(--color-primary 등)는 여기서 정의하지 않는다.
+   vite.config.js가 client.json의 brand.colors로 <head>에 직접 넣는다 (lib/theme.js). */
+:root {
+  --font-sans: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, 'Apple SD Gothic Neo',
+    'Noto Sans KR', 'Malgun Gothic', sans-serif;
+
+  --header-height: 56px;
+  --radius: 14px;
+  --radius-sm: 8px;
+  --gutter: 16px;
+  --container: 1120px;
+  --section-space: 72px;
+  --shadow: 0 6px 24px color-mix(in srgb, var(--color-text) 8%, transparent);
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --gutter: 32px;
+    --header-height: 64px;
+    --section-space: 120px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  background: var(--color-background);
+  line-height: 1.6;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+button {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+/* ---------- 레이아웃 ---------- */
+.container {
+  width: 100%;
+  max-width: calc(var(--container) + var(--gutter) * 2);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.section {
+  padding-block: var(--section-space);
+  scroll-margin-top: calc(var(--header-height) + 8px); /* 고정 헤더에 가리지 않게 */
+}
+
+.pre-line {
+  white-space: pre-line;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------- 버튼 ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 48px;
+  padding: 0 22px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s, transform 0.2s var(--ease);
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background: color-mix(in srgb, var(--color-primary) 85%, black);
+}
+
+.btn--outline {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  background: transparent;
+}
+
+.btn--outline:hover {
+  background: color-mix(in srgb, var(--color-primary) 8%, transparent);
+}
+
+.btn--block {
+  width: 100%;
+}
+
+.btn--disabled,
+.btn--disabled:hover {
+  background: color-mix(in srgb, var(--color-muted) 20%, transparent);
+  color: var(--color-muted);
+  cursor: not-allowed;
+}
+
+/* 상품·교육 카드 아래 결제 안내 */
+.store-notice {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--color-muted);
+}
+
+/* ---------- 스크롤 등장 효과 ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

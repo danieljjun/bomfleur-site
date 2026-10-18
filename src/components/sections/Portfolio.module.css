@@ -1,0 +1,63 @@
+/* 간격은 화면이 아니라 이 컨테이너의 너비에 맞춘다 */
+.wrap {
+  container-type: inline-size;
+}
+
+.grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 모든 화면에서 3열 */
+  gap: 10px;
+}
+
+.tile {
+  position: relative;
+  display: block;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--tile-color, color-mix(in srgb, var(--color-secondary) 60%, var(--color-background)));
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s var(--ease);
+}
+
+/* 여러 장·동영상 게시물 표시 */
+.badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.5));
+}
+
+.more {
+  margin-top: 28px;
+  text-align: center;
+}
+
+@media (hover: hover) {
+  .tile:hover .photo {
+    transform: scale(1.05);
+  }
+}
+
+@container (min-width: 600px) {
+  .grid {
+    gap: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .photo {
+    transition: none;
+  }
+}

@@ -1,0 +1,369 @@
+{
+  "meta": {
+    "siteUrl": "https://example.com",
+    "title": "봄플레르 BOM.FLEUR | 자이언트 플라워 · 페이퍼 플라워 공방 (마포)",
+    "description": "매장 디스플레이, 팝업스토어 포토존, 웨딩 연출을 위한 대형 종이꽃과 플라워 오브제를 손으로 만듭니다. 원데이·정규·창업 클래스 운영.",
+    "keywords": [
+      "봄플레르",
+      "BOM.FLEUR",
+      "bom.fleur",
+      "자이언트 플라워",
+      "페이퍼 플라워",
+      "대형 종이꽃",
+      "포토존 제작",
+      "마포 공방",
+      "종이꽃 클래스"
+    ],
+    "ogSource": "work-peony-garden",
+    "ogImage": "/og.jpg",
+    "openingHours": [
+      "Mo-Su 00:00-24:00"
+    ],
+    "verification": {
+      "naver": null,
+      "google": null
+    }
+  },
+  "brand": {
+    "name": "봄플레르",
+    "nameEn": "BOM.FLEUR",
+    "tagline": "지지 않는 꽃으로 공간을 채웁니다",
+    "logo": null,
+    "colors": {
+      "primary": "#A8485F",
+      "secondary": "#F2DDE0",
+      "background": "#FBF7F4",
+      "surface": "#FFFFFF",
+      "text": "#2F2A2C",
+      "muted": "#6E6468",
+      "accent": "#587250"
+    }
+  },
+  "store": {
+    "homeUrl": "https://smartstore.naver.com/bomfleur",
+    "headerLabel": "스토어 바로가기",
+    "notice": "결제는 네이버 스마트스토어에서 진행됩니다",
+    "contactLabel": "문의하기",
+    "contactUrl": "https://pf.kakao.com/_xnbIxoxj",
+    "contactPhone": "010-4826-7286"
+  },
+  "hero": {
+    "eyebrow": "BOM.FLEUR · Giant Paper Flower",
+    "headline": "공간에 피어나는\n지지 않는 꽃",
+    "subheadline": "한 장 한 장 손으로 빚은 대형 종이꽃으로 매장과 행사, 그리고 일상의 공간을 꾸며드립니다.",
+    "cta": {
+      "label": "작품 보러가기",
+      "href": "#portfolio"
+    },
+    "secondaryCta": {
+      "label": "클래스 신청",
+      "href": "#education"
+    },
+    "model": null,
+    "flowerImage": "/images/hero-flower.webp",
+    "fallbackImage": "/images/work-rose-photozone.webp"
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "종이 한 장이\n꽃이 되기까지",
+    "paragraphs": [
+      "봄플레르는 마포에서 자이언트 플라워와 페이퍼 플라워를 만드는 공방입니다. 꽃잎 한 장마다 색을 입히고 결을 살려, 가까이서 보아도 살아 있는 꽃처럼 보이도록 만듭니다.",
+      "백화점 쇼윈도와 팝업스토어, 웨딩과 거리 전시까지 공간의 이야기에 맞춰 기획부터 설치까지 함께합니다. 그 과정을 클래스에서도 나누고 있습니다."
+    ],
+    "image": "/images/about-artist.webp",
+    "imageAlt": "대형 분홍 작약 종이꽃 옆에 선 작가",
+    "highlights": [
+      {
+        "value": "9년",
+        "label": "작업 경력"
+      },
+      {
+        "value": "320+",
+        "label": "공간 연출"
+      },
+      {
+        "value": "1,200+",
+        "label": "클래스 수강생"
+      }
+    ]
+  },
+  "portfolio": {
+    "eyebrow": "Instagram",
+    "title": "최근 작업",
+    "description": "새로운 작업과 소식은 인스타그램에서 가장 먼저 전해드려요.",
+    "galleryCount": 6,
+    "instagram": {
+      "feedUrl": "https://feeds.behold.so/BvZCTgxsfE3QkHCD1DIH",
+      "profileUrl": "https://www.instagram.com/bom.fleur/",
+      "moreLabel": "인스타그램에서 더 보기"
+    },
+    "items": [
+      {
+        "id": "pf-01",
+        "title": "빛나는 연꽃 정원",
+        "category": "매장 디스플레이",
+        "description": "조명을 품은 연꽃과 연잎으로 꾸민 라운지 디스플레이. 대나무와 이끼로 정원을 연출했습니다.",
+        "image": "/images/work-lotus-light.webp",
+        "imageLarge": null
+      },
+      {
+        "id": "pf-02",
+        "title": "데이지 가든 포토존",
+        "category": "포토존",
+        "description": "데이지와 라넌큘러스, 오렌지 작약으로 구성한 봄 시즌 팝업스토어 포토존.",
+        "image": "/images/work-daisy-garden.webp",
+        "imageLarge": null
+      },
+      {
+        "id": "pf-03",
+        "title": "파스텔 작약 정원",
+        "category": "매장 디스플레이",
+        "description": "핑크와 버터 옐로 작약을 겹겹이 배치한 쇼윈도 연출.",
+        "image": "/images/work-peony-garden.webp",
+        "imageLarge": null
+      },
+      {
+        "id": "pf-04",
+        "title": "로즈 웨딩 포토존",
+        "category": "포토존",
+        "description": "핑크와 화이트 장미로 꾸민 웨딩 포토존. 반투명 꽃잎이 빛을 머금도록 제작했습니다.",
+        "image": "/images/work-rose-photozone.webp",
+        "imageLarge": null
+      },
+      {
+        "id": "pf-05",
+        "title": "거리 전시 '피어나다'",
+        "category": "전시",
+        "description": "도심 화단에 사람 키만 한 작약을 심은 야외 설치 작업.",
+        "image": "/images/about-artist.webp",
+        "imageLarge": null
+      }
+    ]
+  },
+  "products": {
+    "eyebrow": "Shop",
+    "title": "스마트스토어 상품",
+    "description": "구매는 네이버 스마트스토어에서 진행됩니다.",
+    "storeUrl": "https://smartstore.naver.com/bomfleur",
+    "storeLabel": "스마트스토어 전체 보기",
+    "buttonLabel": "네이버에서 구매하기",
+    "items": [
+      {
+        "id": "pd-01",
+        "name": "대형 작약 스탠드 (150cm)",
+        "price": 290000,
+        "image": "/images/work-peony-garden.webp",
+        "url": null,
+        "badge": "BEST"
+      },
+      {
+        "id": "pd-02",
+        "name": "연꽃 무드 조명",
+        "price": 180000,
+        "image": "/images/work-lotus-light.webp",
+        "url": null,
+        "badge": "NEW"
+      },
+      {
+        "id": "pd-03",
+        "name": "자이언트 로즈 한 송이",
+        "price": 150000,
+        "image": "/images/work-rose-photozone.webp",
+        "url": null,
+        "badge": null
+      },
+      {
+        "id": "pd-04",
+        "name": "데이지 만들기 DIY 키트",
+        "price": 39000,
+        "image": "/images/work-daisy-garden.webp",
+        "url": null,
+        "badge": null
+      }
+    ]
+  },
+  "education": {
+    "eyebrow": "Class",
+    "title": "종이꽃 클래스",
+    "description": "처음이어도 괜찮습니다. 모든 재료와 도구는 공방에서 준비해 드립니다.",
+    "storeUrl": "https://smartstore.naver.com/bomfleur",
+    "buttonLabel": "네이버에서 신청하기",
+    "refundPolicy": [
+      "수업 7일 전까지 취소: 전액 환불",
+      "수업 3일 전까지 취소: 50% 환불",
+      "수업 2일 전부터: 환불 불가 (1회 일정 변경 가능)",
+      "재료 키트 발송 후에는 재료비를 제외하고 환불됩니다."
+    ],
+    "items": [
+      {
+        "id": "ed-01",
+        "name": "원데이 대형 장미 만들기",
+        "description": "꽃잎 재단부터 색 입히기, 조립까지. 내 키만 한 장미 한 송이를 완성합니다.",
+        "schedule": "매주 토·일 13:00–16:00",
+        "duration": "3시간",
+        "capacity": 6,
+        "price": 70000,
+        "applyUrl": null,
+        "refundPolicy": null
+      },
+      {
+        "id": "ed-02",
+        "name": "정규반 (4주 과정)",
+        "description": "장미·작약·데이지·연꽃 네 가지 꽃의 구조와 채색 기법을 익힙니다.",
+        "schedule": "매주 목 19:00–21:30 (4회)",
+        "duration": "총 10시간",
+        "capacity": 4,
+        "price": 420000,
+        "applyUrl": null,
+        "refundPolicy": null
+      },
+      {
+        "id": "ed-03",
+        "name": "창업·강사반 (8주 과정)",
+        "description": "포토존 기획과 설치, 견적 산정, 클래스 운영까지 공방 창업에 필요한 내용을 다룹니다.",
+        "schedule": "매주 화 10:00–13:00 (8회)",
+        "duration": "총 24시간",
+        "capacity": 3,
+        "price": 1500000,
+        "applyUrl": null,
+        "refundPolicy": [
+          "개강 14일 전까지 취소: 전액 환불",
+          "개강 7일 전까지 취소: 70% 환불",
+          "개강 후: 남은 회차 기준 환불 (재료비 제외)"
+        ]
+      }
+    ]
+  },
+  "quoteForm": {
+    "url": "https://docs.google.com/forms/d/e/1FAIpQLScz5Nr5k0OyUR1qHPZT-ZRGkNj9M8uQE9maPEDQsdyi6rIPfg/viewform",
+    "navLabel": "견적 문의",
+    "eyebrow": "Quote",
+    "title": "견적 및 교육 문의",
+    "description": "행사 일정과 공간, 원하시는 꽃의 종류와 크기를 남겨주시면 맞춤 견적을 안내해 드립니다. 대여·주문제작은 물론, 단체·기업 클래스와 출강 등 교육 문의도 함께 받고 있어요.",
+    "buttonLabel": "견적 문의하기",
+    "steps": [
+      "견적 문의 작성",
+      "업체 접수 확인",
+      "확인 후 연락처로 안내"
+    ],
+    "fallbackText": "지금은 온라인 견적 접수를 준비 중입니다. 전화 또는 카카오톡 채널로 문의해 주세요.",
+    "phoneLabel": "전화 문의",
+    "kakaoLabel": "카카오톡 채널 문의"
+  },
+  "footer": {
+    "address": "서울 마포구 광성로6길 16 301호",
+    "phone": "0507-1325-7286",
+    "email": "bafa.bomfleur@gmail.com",
+    "hours": "월–일 00:00–24:00 (연중무휴)",
+    "business": {
+      "owner": "김민지",
+      "registrationNumber": "184-18-01734",
+      "mailOrderNumber": "제2023-강원원주-00453호",
+      "hostingProvider": null
+    },
+    "social": [
+      {
+        "type": "instagram",
+        "label": "인스타그램",
+        "url": "https://www.instagram.com/bom.fleur/"
+      },
+      {
+        "type": "blog",
+        "label": "네이버 블로그",
+        "url": "https://blog.naver.com/start_ming"
+      },
+      {
+        "type": "kakao",
+        "label": "카카오톡 채널",
+        "url": "https://pf.kakao.com/_xnbIxoxj"
+      }
+    ]
+  },
+  "privacy": {
+    "title": "개인정보처리방침",
+    "effectiveDate": "2026-10-14",
+    "officer": {
+      "name": "김민지",
+      "position": "대표",
+      "phone": "0507-1325-7286",
+      "email": "bafa.bomfleur@gmail.com"
+    },
+    "sections": [
+      {
+        "title": "1. 총칙",
+        "paragraphs": [
+          "봄플레르(이하 '공방')는 「개인정보 보호법」 등 관련 법령을 준수하며, 정보주체의 개인정보를 보호하고 관련 고충을 원활하게 처리하기 위해 다음과 같이 개인정보처리방침을 수립·공개합니다."
+        ]
+      },
+      {
+        "title": "2. 수집하는 개인정보 항목 및 수집 방법",
+        "paragraphs": [
+          "본 홈페이지는 회원가입 기능을 운영하지 않으며, 견적 문의는 구글 설문지(Google Forms)로 접수합니다.",
+          "상품 구매와 클래스 신청은 네이버 스마트스토어에서 이루어지며, 이 과정에서 수집되는 개인정보는 네이버㈜의 개인정보처리방침에 따라 처리됩니다. 공방은 주문 처리에 필요한 범위(주문자 이름, 연락처, 배송지)에서만 해당 정보를 확인합니다."
+        ],
+        "items": [
+          "견적 문의(구글 설문지): 이름, 연락처, 이메일 주소, 문의 종류, 상품, 행사 날짜(수령일자)·장소, 수량, 예산, 요청사항",
+          "전화·이메일·SNS 메시지로 문의하는 경우: 이름, 연락처, 문의 내용"
+        ]
+      },
+      {
+        "title": "3. 개인정보의 처리 목적",
+        "items": [
+          "견적 산정 및 안내, 접수 확인 메일 발송",
+          "문의 응대 및 상담",
+          "클래스 일정 안내 및 변경 연락",
+          "주문 상품의 제작·배송 및 사후 서비스"
+        ]
+      },
+      {
+        "title": "4. 개인정보의 보유 및 이용 기간",
+        "paragraphs": [
+          "견적 문의로 받은 정보는 상담이 끝난 뒤 1년간 보관 후 파기하며, 그 밖의 정보는 처리 목적이 달성되면 지체 없이 파기합니다. 다만 관련 법령에 따라 보존이 필요한 경우 아래 기간 동안 보관합니다."
+        ],
+        "items": [
+          "계약 또는 청약철회 등에 관한 기록: 5년 (전자상거래법)",
+          "대금결제 및 재화 등의 공급에 관한 기록: 5년 (전자상거래법)",
+          "소비자의 불만 또는 분쟁처리에 관한 기록: 3년 (전자상거래법)"
+        ]
+      },
+      {
+        "title": "5. 개인정보의 제3자 제공 및 처리 위탁",
+        "paragraphs": [
+          "공방은 정보주체의 동의 또는 법령에 근거한 경우를 제외하고 개인정보를 제3자에게 제공하지 않습니다. 상품 배송을 위해 택배사에 이름, 연락처, 주소가 전달될 수 있습니다.",
+          "견적 문의 접수를 위해 Google LLC의 구글 설문지·구글 드라이브를 이용하며, 입력하신 정보는 Google의 해외 서버(미국 등)에 저장됩니다. 이전되는 항목은 견적 문의 시 입력한 정보이고, 보유 기간은 위 4항과 같습니다."
+        ]
+      },
+      {
+        "title": "6. 개인정보의 파기 절차 및 방법",
+        "paragraphs": [
+          "전자 파일은 복구할 수 없는 방법으로 삭제하고, 종이 문서는 분쇄하거나 소각합니다."
+        ]
+      },
+      {
+        "title": "7. 정보주체의 권리와 행사 방법",
+        "paragraphs": [
+          "정보주체는 언제든지 개인정보 열람, 정정, 삭제, 처리정지를 요구할 수 있으며, 아래 개인정보 보호책임자에게 연락하시면 지체 없이 조치하겠습니다."
+        ]
+      },
+      {
+        "title": "8. 자동 수집 장치의 설치·운영 및 거부",
+        "paragraphs": [
+          "본 홈페이지는 쿠키나 방문자 분석 도구를 사용하지 않습니다.",
+          "인스타그램 게시물을 보여주기 위해 외부 서비스 Behold(behold.so)의 이미지 서버에서 사진을 불러옵니다. 이 과정에서 방문자의 IP 주소, 브라우저 정보 등 접속 정보가 해당 서비스에 전달될 수 있습니다. 게시물을 누르면 인스타그램(Meta) 페이지로 이동하며, 이후에는 Meta의 개인정보처리방침이 적용됩니다."
+        ]
+      },
+      {
+        "title": "9. 권익침해 구제 방법",
+        "paragraphs": [
+          "개인정보 침해에 대한 신고나 상담이 필요하신 경우 아래 기관에 문의하실 수 있습니다."
+        ],
+        "items": [
+          "개인정보침해신고센터: (국번없이) 118 / privacy.kisa.or.kr",
+          "개인정보분쟁조정위원회: 1833-6972 / www.kopico.go.kr",
+          "대검찰청: (국번없이) 1301 / www.spo.go.kr",
+          "경찰청: (국번없이) 182 / ecrm.police.go.kr"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,135 @@
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--color-background);
+}
+
+.visual {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  container-type: size; /* .flower 위치를 히어로 높이(cqh) 기준으로 잡는다 */
+}
+
+.fallback {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 1.2s var(--ease), filter 1.2s var(--ease);
+}
+
+/* 꽃 사진(hero.flowerImage)이 있으면 배경 사진은 옅게 */
+.dimmed .fallback {
+  opacity: 0.28;
+  filter: blur(2px) saturate(0.8);
+}
+
+/* 정지 꽃 사진: Hero3D의 3D 꽃과 같은 자리·크기 (카메라 fov 45°, 거리 6 기준으로 환산)
+   모바일 3D: 위치 (0.55, 0.85), 크기 0.62 / PC 3D: 위치 (1.7, -0.1), 크기 1 */
+.flower {
+  position: absolute;
+  left: calc(50% + 11cqh);
+  top: 33cqh;
+  height: 47.5cqh;
+  width: auto;
+  max-width: none;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.8s var(--ease);
+}
+
+/* 3D 꽃이 준비되면 넘겨준다 */
+.flowerHidden {
+  opacity: 0;
+}
+
+@media (min-width: 768px) {
+  .flower {
+    left: calc(50% + 34cqh);
+    top: 52cqh;
+    height: 76.5cqh;
+  }
+}
+
+/* 3D 캔버스가 정지 이미지 위를 덮는다 */
+.visual canvas {
+  position: absolute !important;
+  inset: 0;
+}
+
+/* 글자가 잘 읽히도록 아래쪽을 배경색으로 살짝 덮는다 */
+.visual::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    var(--color-background) 0%,
+    color-mix(in srgb, var(--color-background) 70%, transparent) 35%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.content {
+  padding-bottom: 56px;
+  padding-top: 120px;
+}
+
+.eyebrow {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 12px;
+}
+
+.headline {
+  font-size: clamp(34px, 9vw, 64px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+
+.sub {
+  margin-top: 16px;
+  max-width: 32em;
+  color: var(--color-muted);
+  font-size: 16px;
+}
+
+.actions {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    align-items: center;
+  }
+
+  .visual::after {
+    background: linear-gradient(
+      to right,
+      var(--color-background) 0%,
+      color-mix(in srgb, var(--color-background) 60%, transparent) 40%,
+      transparent 65%
+    );
+  }
+
+  .content {
+    padding-block: 0;
+  }
+
+  .sub {
+    font-size: 18px;
+  }
+}

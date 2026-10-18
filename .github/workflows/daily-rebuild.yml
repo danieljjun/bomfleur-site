@@ -1,0 +1,28 @@
+# 매일 한 번 Cloudflare Pages를 다시 빌드해 인스타그램 피드를 갱신한다.
+# (피드는 빌드할 때 scripts/fetch-instagram.mjs가 받아 둔다)
+#
+# 설정 방법
+# 1. Cloudflare 대시보드 → Workers & Pages → 이 사이트 → Settings → Builds → Deploy hooks 에서
+#    훅을 만들고 주소를 복사한다.
+# 2. GitHub 저장소 → Settings → Secrets and variables → Actions 에
+#    이름 CF_PAGES_DEPLOY_HOOK 으로 그 주소를 저장한다. (주소를 코드에 직접 넣지 않는다)
+name: Daily rebuild
+
+on:
+  schedule:
+    - cron: '0 18 * * *' # 매일 한국 시간 새벽 3시 (UTC 18시)
+  workflow_dispatch: # Actions 탭에서 수동 실행도 가능
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cloudflare Pages 빌드 요청
+        env:
+          HOOK: ${{ secrets.CF_PAGES_DEPLOY_HOOK }}
+        run: |
+          if [ -z "$HOOK" ]; then
+            echo "CF_PAGES_DEPLOY_HOOK 시크릿이 없습니다." >&2
+            exit 1
+          fi
+          curl -fsS -X POST "$HOOK"

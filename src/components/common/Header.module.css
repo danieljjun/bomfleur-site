@@ -1,0 +1,98 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* 메인 페이지: 히어로 위에 겹쳐 띄운다 */
+.overlay {
+  position: fixed;
+  inset: 0 0 auto;
+}
+
+.solid {
+  background: color-mix(in srgb, var(--color-background) 88%, transparent);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 1px 0 color-mix(in srgb, var(--color-text) 8%, transparent);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  height: var(--header-height);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navLink {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 10px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.2s;
+}
+
+.navLink:hover {
+  background: color-mix(in srgb, var(--color-text) 6%, transparent);
+}
+
+.store {
+  flex-shrink: 0;
+  min-height: 44px;
+  padding: 0 16px;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .brand {
+    font-size: 19px;
+  }
+
+  .right {
+    gap: 8px;
+  }
+
+  .navLink {
+    padding: 0 14px;
+    font-size: 15px;
+  }
+
+  .store {
+    padding: 0 20px;
+    font-size: 15px;
+  }
+}
