@@ -6,6 +6,9 @@ import { themeCss } from './src/lib/theme.js'
 
 const PAGES = { main: 'index.html', privacy: 'privacy.html' }
 
+// 공개 주소: Cloudflare는 /privacy.html을 /privacy로 리다이렉트하므로 처음부터 확장자 없는 주소를 쓴다
+const pagePath = (file) => (file === 'index.html' ? '/' : `/${file.replace(/\.html$/, '')}`)
+
 const escapeHtml = (value = '') =>
   String(value).replace(/[&<>"']/g, (ch) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[ch])
 
@@ -42,7 +45,7 @@ function headTags(client, page) {
   const isHome = page === 'index.html'
   const title = isHome ? m.title : `${privacy.title} | ${brand.name}`
   const description = isHome ? m.description : `${brand.name}의 ${privacy.title}입니다.`
-  const url = absoluteUrl(m.siteUrl, isHome ? '/' : `/${page}`)
+  const url = absoluteUrl(m.siteUrl, pagePath(page))
   const ogImage = absoluteUrl(m.siteUrl, m.ogImage)
   // 첫 화면의 가장 중요한 이미지(LCP): 꽃 사진이 있으면 꽃, 없으면 배경 사진
   const { flowerImage, model, fallbackImage } = client.hero
@@ -99,7 +102,7 @@ function clientSite() {
       if (this.environment?.config.build.ssr) return
       const { meta: m } = readClient()
       const today = new Date().toLocaleDateString('sv-SE') // YYYY-MM-DD (현지 날짜)
-      const urls = Object.values(PAGES).map((p) => absoluteUrl(m.siteUrl, p === 'index.html' ? '/' : `/${p}`))
+      const urls = Object.values(PAGES).map((p) => absoluteUrl(m.siteUrl, pagePath(p)))
       this.emitFile({
         type: 'asset',
         fileName: 'robots.txt',

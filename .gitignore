@@ -25,3 +25,6 @@ dist-ssr
 
 # Lighthouse 측정 결과
 .lighthouse
+
+# wrangler 로컬 실행 캐시
+.wrangler

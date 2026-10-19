@@ -109,7 +109,7 @@ export default function Footer({ footer, brand, privacy }) {
 
         <div className={styles.bottom}>
           {privacy && (
-            <a href="/privacy.html" className={styles.privacy}>
+            <a href="/privacy" className={styles.privacy}>
               {privacy.title}
             </a>
           )}

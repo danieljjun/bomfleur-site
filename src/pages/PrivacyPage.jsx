@@ -3,7 +3,7 @@ import Header from '../components/common/Header.jsx'
 import Footer from '../components/sections/Footer.jsx'
 import styles from './PrivacyPage.module.css'
 
-// 개인정보처리방침 페이지 (/privacy.html). 내용은 모두 client.json의 privacy에서 읽는다.
+// 개인정보처리방침 페이지 (/privacy, 파일은 privacy.html). 내용은 모두 client.json의 privacy에서 읽는다.
 export default function PrivacyPage() {
   const { brand, store, quoteForm, footer, privacy } = client
   const { officer } = privacy

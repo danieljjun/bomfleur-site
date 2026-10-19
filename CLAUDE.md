@@ -45,8 +45,10 @@
 - `npm run instagram` 인스타 피드만 다시 받기 (Behold 조회 1회 차감)
 
 ## 배포
-- Cloudflare Pages: 빌드 명령 `npm run build`, 출력 폴더 `dist`, Node 22(`.node-version`).
-- `.github/workflows/daily-rebuild.yml`이 매일 새벽 3시(KST) Pages 배포 훅(`CF_PAGES_DEPLOY_HOOK` 시크릿)을 호출해 인스타 피드를 갱신한다.
+- Cloudflare Workers(정적 자산): `wrangler.jsonc`가 `dist`를 배포한다. Workers Builds 설정은 빌드 명령 `npm run build`, 배포 명령 `npx wrangler deploy`, Node 22(`.node-version`).
+- 로컬에서 배포 환경과 같게 확인: `npm run build` 후 `npx wrangler dev`.
+- Cloudflare는 `/페이지.html`을 `/페이지`로 리다이렉트하므로 링크·canonical·sitemap은 확장자 없는 주소를 쓴다(`vite.config.js`의 `pagePath`).
+- `.github/workflows/daily-rebuild.yml`이 매일 새벽 3시(KST) 배포 훅(`CF_PAGES_DEPLOY_HOOK` 시크릿, Worker → Settings → Builds → Deploy Hooks)을 호출해 인스타 피드를 갱신한다.
 
 ## 구조
 - `src/data/client.json` 업체 데이터 (meta, brand, hero, about, portfolio, products, education, footer, privacy)
@@ -66,7 +68,7 @@
 - 견적 문의: `sections/QuoteCard.jsx`(#quote, 교육 섹션 아래)가 `quoteForm` 값을 표시하고 `quoteForm.url`(구글 설문지)을 새 탭으로 연다. url이 비면 전화·카카오톡 채널 안내로 대체. 헤더 메뉴(`Header`의 `nav`)에서 #quote로 스크롤. 상품·교육 카드에는 견적 버튼을 넣지 않는다.
   - 폼으로 개인정보를 받으므로 `privacy.sections`(수집 항목·보유 기간·국외 이전)를 폼 내용과 맞춘다.
 - 외부 링크 버튼은 `common/ExternalButton.jsx`, 이미지는 `common/Img.jsx`를 쓴다 (새 탭·lazy·srcset 처리가 들어 있음)
-- 페이지: `index.html`(메인), `privacy.html`(개인정보처리방침). 새 페이지는 `vite.config.js`의 `PAGES`와 `src/entry-server.jsx`에 함께 등록한다.
+- 페이지: `index.html`(메인, `/`), `privacy.html`(개인정보처리방침, `/privacy`). 새 페이지는 `vite.config.js`의 `PAGES`와 `src/entry-server.jsx`에 함께 등록한다.
 - `vite.config.js`가 `<!--head-tags-->`에 제목·메타·OG·JSON-LD·색상 변수를 넣고, `robots.txt`·`sitemap.xml`을 만든다.
 - 빌드 시 `scripts/prerender.mjs`가 HTML을 미리 렌더링한다. 컴포넌트는 서버 렌더와 첫 클라이언트 렌더 결과가 같아야 한다 (렌더 중 `window` 분기 금지, 브라우저 전용 판단은 `useEffect`에서).
 
