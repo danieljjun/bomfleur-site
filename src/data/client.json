@@ -59,8 +59,9 @@
       "label": "클래스 신청",
       "href": "#education"
     },
+    "enable3D": false,
     "model": null,
-    "flowerImage": "/images/hero-flower.webp",
+    "flowerImage": null,
     "fallbackImage": "/images/work-rose-photozone.webp"
   },
   "about": {

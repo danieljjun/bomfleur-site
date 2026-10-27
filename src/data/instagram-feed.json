@@ -1,13 +1,35 @@
 {
-  "fetchedAt": "2026-10-19T20:27:24.626Z",
+  "fetchedAt": "2026-10-27T07:55:04.398Z",
   "username": "bom.fleur",
   "tiles": [
+    {
+      "key": "18119647112062152",
+      "href": "https://www.instagram.com/p/De6KfDVj2AJ/",
+      "alt": "원데이클래스로 만들어주신",
+      "src": "https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxODExOTY0NzExMjA2MjE1MiIsImgiOiIxcm5uYmR4In0.jpg?class=originalMedium",
+      "srcSet": "https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxODExOTY0NzExMjA2MjE1MiIsImgiOiIxcm5uYmR4In0.jpg?class=originalSmall 300w, https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxODExOTY0NzExMjA2MjE1MiIsImgiOiIxcm5uYmR4In0.jpg?class=originalMedium 525w, https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxODExOTY0NzExMjA2MjE1MiIsImgiOiIxcm5uYmR4In0.jpg?class=originalLarge 750w",
+      "width": 525,
+      "height": 700,
+      "color": "rgb(76 140 128)",
+      "type": "carousel"
+    },
+    {
+      "key": "18118550900005741",
+      "href": "https://www.instagram.com/p/DewBFBED39b/",
+      "alt": "자격증(BAFA)",
+      "src": "https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxODExODU1MDkwMDAwNTc0MSIsImgiOiIxNnE1bzc0In0.jpg?class=originalMedium",
+      "srcSet": "https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxODExODU1MDkwMDAwNTc0MSIsImgiOiIxNnE1bzc0In0.jpg?class=originalSmall 320w, https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxODExODU1MDkwMDAwNTc0MSIsImgiOiIxNnE1bzc0In0.jpg?class=originalMedium 560w, https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxODExODU1MDkwMDAwNTc0MSIsImgiOiIxNnE1bzc0In0.jpg?class=originalLarge 800w",
+      "width": 560,
+      "height": 700,
+      "color": "rgb(113 119 113)",
+      "type": "carousel"
+    },
     {
       "key": "18118167344121721",
       "href": "https://www.instagram.com/p/DejWP0pD2jI/",
       "alt": "아이들 생일파티 포토존",
-      "src": "https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxODExODE2NzM0NDEyMTcyMSIsImgiOiI3a28wMWgifQ.jpg?class=originalMedium",
-      "srcSet": "https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxODExODE2NzM0NDEyMTcyMSIsImgiOiI3a28wMWgifQ.jpg?class=originalSmall 320w, https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxODExODE2NzM0NDEyMTcyMSIsImgiOiI3a28wMWgifQ.jpg?class=originalMedium 560w, https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxODExODE2NzM0NDEyMTcyMSIsImgiOiI3a28wMWgifQ.jpg?class=originalLarge 800w",
+      "src": "https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxODExODE2NzM0NDEyMTcyMSIsImgiOiJ1dzdrZjIifQ.jpg?class=originalMedium",
+      "srcSet": "https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxODExODE2NzM0NDEyMTcyMSIsImgiOiJ1dzdrZjIifQ.jpg?class=originalSmall 320w, https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxODExODE2NzM0NDEyMTcyMSIsImgiOiJ1dzdrZjIifQ.jpg?class=originalMedium 560w, https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxODExODE2NzM0NDEyMTcyMSIsImgiOiJ1dzdrZjIifQ.jpg?class=originalLarge 800w",
       "width": 560,
       "height": 700,
       "color": "rgb(141 125 129)",
@@ -17,8 +39,8 @@
       "key": "17912724345549808",
       "href": "https://www.instagram.com/p/DegZ7RuPz3z/",
       "alt": "줄기작업중 잠깐 해 들어서 한 컷",
-      "src": "https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxNzkxMjcyNDM0NTU0OTgwOCIsImgiOiJvdjdhMmgifQ.jpg?class=originalMedium",
-      "srcSet": "https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxNzkxMjcyNDM0NTU0OTgwOCIsImgiOiJvdjdhMmgifQ.jpg?class=originalSmall 320w, https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxNzkxMjcyNDM0NTU0OTgwOCIsImgiOiJvdjdhMmgifQ.jpg?class=originalMedium 561w, https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxNzkxMjcyNDM0NTU0OTgwOCIsImgiOiJvdjdhMmgifQ.jpg?class=originalLarge 801w",
+      "src": "https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxNzkxMjcyNDM0NTU0OTgwOCIsImgiOiI5eG5tYTgifQ.jpg?class=originalMedium",
+      "srcSet": "https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxNzkxMjcyNDM0NTU0OTgwOCIsImgiOiI5eG5tYTgifQ.jpg?class=originalSmall 320w, https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxNzkxMjcyNDM0NTU0OTgwOCIsImgiOiI5eG5tYTgifQ.jpg?class=originalMedium 561w, https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxNzkxMjcyNDM0NTU0OTgwOCIsImgiOiI5eG5tYTgifQ.jpg?class=originalLarge 801w",
       "width": 561,
       "height": 700,
       "color": "rgb(84 156 20)",
@@ -28,8 +50,8 @@
       "key": "18116314103095248",
       "href": "https://www.instagram.com/p/DeLzEfBvLOr/",
       "alt": "스튜디오로 보내드릴",
-      "src": "https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxODExNjMxNDEwMzA5NTI0OCIsImgiOiJwZGo4dWcifQ.jpg?class=originalMedium",
-      "srcSet": "https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxODExNjMxNDEwMzA5NTI0OCIsImgiOiJwZGo4dWcifQ.jpg?class=originalSmall 320w, https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxODExNjMxNDEwMzA5NTI0OCIsImgiOiJwZGo4dWcifQ.jpg?class=originalMedium 561w, https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxODExNjMxNDEwMzA5NTI0OCIsImgiOiJwZGo4dWcifQ.jpg?class=originalLarge 801w",
+      "src": "https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxODExNjMxNDEwMzA5NTI0OCIsImgiOiIxd3MzMDNzIn0.jpg?class=originalMedium",
+      "srcSet": "https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxODExNjMxNDEwMzA5NTI0OCIsImgiOiIxd3MzMDNzIn0.jpg?class=originalSmall 320w, https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxODExNjMxNDEwMzA5NTI0OCIsImgiOiIxd3MzMDNzIn0.jpg?class=originalMedium 561w, https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxODExNjMxNDEwMzA5NTI0OCIsImgiOiIxd3MzMDNzIn0.jpg?class=originalLarge 801w",
       "width": 561,
       "height": 700,
       "color": "rgb(71 172 244)",
@@ -39,34 +61,12 @@
       "key": "17963347673981901",
       "href": "https://www.instagram.com/p/Ddn5wCOj_tG/",
       "alt": "70cm 국화 첫 샘플링",
-      "src": "https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxNzk2MzM0NzY3Mzk4MTkwMSIsImgiOiIxdDQ3amVhIn0.jpg?class=originalMedium",
-      "srcSet": "https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxNzk2MzM0NzY3Mzk4MTkwMSIsImgiOiIxdDQ3amVhIn0.jpg?class=originalSmall 320w, https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxNzk2MzM0NzY3Mzk4MTkwMSIsImgiOiIxdDQ3amVhIn0.jpg?class=originalMedium 560w, https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxNzk2MzM0NzY3Mzk4MTkwMSIsImgiOiIxdDQ3amVhIn0.jpg?class=originalLarge 800w",
+      "src": "https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxNzk2MzM0NzY3Mzk4MTkwMSIsImgiOiIxeXUzdmliIn0.jpg?class=originalMedium",
+      "srcSet": "https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxNzk2MzM0NzY3Mzk4MTkwMSIsImgiOiIxeXUzdmliIn0.jpg?class=originalSmall 320w, https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxNzk2MzM0NzY3Mzk4MTkwMSIsImgiOiIxeXUzdmliIn0.jpg?class=originalMedium 560w, https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxNzk2MzM0NzY3Mzk4MTkwMSIsImgiOiIxeXUzdmliIn0.jpg?class=originalLarge 800w",
       "width": 560,
       "height": 700,
       "color": "rgb(66 132 96)",
       "type": "carousel"
-    },
-    {
-      "key": "18085929017499227",
-      "href": "https://www.instagram.com/reel/Ddgf_Z_PO4F/",
-      "alt": "자이언트코스코스",
-      "src": "https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxODA4NTkyOTAxNzQ5OTIyNyIsImgiOiIxcXQxa3l4In0.jpg?class=originalMedium",
-      "srcSet": "https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxODA4NTkyOTAxNzQ5OTIyNyIsImgiOiIxcXQxa3l4In0.jpg?class=originalSmall 225w, https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxODA4NTkyOTAxNzQ5OTIyNyIsImgiOiIxcXQxa3l4In0.jpg?class=originalMedium 394w, https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxODA4NTkyOTAxNzQ5OTIyNyIsImgiOiIxcXQxa3l4In0.jpg?class=originalLarge 563w",
-      "width": 394,
-      "height": 700,
-      "color": "rgb(196 215 146)",
-      "type": "video"
-    },
-    {
-      "key": "18102964637356632",
-      "href": "https://www.instagram.com/p/DddhciKvQ2o/",
-      "alt": "다음주 보내드릴",
-      "src": "https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxODEwMjk2NDYzNzM1NjYzMiIsImgiOiJ3aHFoa3QifQ.jpg?class=originalMedium",
-      "srcSet": "https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxODEwMjk2NDYzNzM1NjYzMiIsImgiOiJ3aHFoa3QifQ.jpg?class=originalSmall 320w, https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxODEwMjk2NDYzNzM1NjYzMiIsImgiOiJ3aHFoa3QifQ.jpg?class=originalMedium 561w, https://behold.pictures/eyJ1IjoiTTFyR0hlcFk1MVZFajZWWFZFSEdodGIxRlRqMiIsImYiOiJCdlpDVGd4c2ZFM1FrSENEMURJSCIsInAiOiIxODEwMjk2NDYzNzM1NjYzMiIsImgiOiJ3aHFoa3QifQ.jpg?class=originalLarge 801w",
-      "width": 561,
-      "height": 700,
-      "color": "rgb(169 208 122)",
-      "type": null
     }
   ]
 }

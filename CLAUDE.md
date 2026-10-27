@@ -54,6 +54,7 @@
 - `src/data/client.json` 업체 데이터 (meta, brand, hero, about, portfolio, products, education, footer, privacy)
 - `src/data/image-manifest.json` 이미지 크기 정보 (`npm run images`가 생성)
 - `src/components/hero/` 히어로와 3D (`Hero3D`는 첫 화면이 그려진 뒤 지연 로딩, `hooks/useCan3D.js`)
+  - `hero.enable3D: false`면 3D를 끄고(three.js 미로딩) 배경 정지 이미지만 보여준다. 꽃 사진도 빼려면 `hero.flowerImage: null`.
   - 3D 오브젝트 우선순위: `hero.model`(glb) → `hero.flowerImage`(배경을 오려낸 투명 webp, `FlowerImage.jsx`) → 기본 TorusKnot.
   - 사진 오브젝트는 앞면만 있으므로 회전시키지 않고 기울기(±20°)·둥실만 준다.
   - `hero.flowerImage`가 있으면 배경(`hero.fallbackImage`)은 항상 옅게 깔고, 같은 꽃 사진을 정지 이미지로 3D와 같은 자리에 둔다(`Hero.module.css` `.flower`). 3D 꽃이 준비되면 정지 꽃은 사라진다. 저사양·동작 줄이기에서는 정지 꽃이 그대로 보인다. 3D 위치·크기를 바꾸면 `.flower` 값도 함께 맞춘다.
