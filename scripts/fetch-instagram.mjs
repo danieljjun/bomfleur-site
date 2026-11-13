@@ -39,6 +39,17 @@ async function fetchFeed(url) {
   }
 }
 
+// Behold 이미지 서버가 일부 게시물 사진을 주지 못하는 경우(400 등)가 있어, 실제로 열리는 사진만 남긴다
+async function imageOk(url) {
+  try {
+    const res = await fetch(url, { signal: AbortSignal.timeout(TIMEOUT) })
+    await res.body?.cancel()
+    return res.ok
+  } catch {
+    return false
+  }
+}
+
 async function save(data) {
   await writeFile(OUT, JSON.stringify(data, null, 2) + '\n')
 }
@@ -49,9 +60,14 @@ if (!feedUrl) {
 } else {
   try {
     const data = await fetchFeed(feedUrl)
-    const tiles = (data.posts ?? [])
+    const candidates = (data.posts ?? [])
       .filter((p) => p.permalink && p.sizes && p.visibility !== 'hidden')
       .map(postToTile)
+    const checks = await Promise.all(candidates.map((t) => imageOk(t.src)))
+    const tiles = candidates.filter((_, i) => checks[i])
+    for (const t of candidates.filter((_, i) => !checks[i])) {
+      console.warn(`! 사진을 불러올 수 없어 제외: ${t.href}`)
+    }
     if (!tiles.length) throw new Error('게시물이 없습니다')
     await save({ fetchedAt: new Date().toISOString(), username: data.username ?? null, tiles })
     console.log(`✓ 인스타그램 피드 ${tiles.length}개 저장 (@${data.username})`)

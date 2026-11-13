@@ -11,7 +11,7 @@ const SIZES = '(min-width: 1024px) 370px, 33vw' // 모든 화면에서 3열
  * - 피드는 빌드할 때 scripts/fetch-instagram.mjs가 받아 둔 src/data/instagram-feed.json을 쓴다.
  *   (방문자 브라우저는 Behold에 피드를 요청하지 않는다. 사진만 Behold 이미지 서버에서 받는다.)
  * - 표시 개수는 portfolio.galleryCount (기본 6 = 3열 × 2행).
- * - 저장된 피드가 없으면 portfolio.items 이미지로 대체하고, 누르면 인스타 프로필로 이동한다.
+ * - 인스타 사진이 표시 개수보다 적으면 portfolio.items 이미지로 채우고, 이 사진을 누르면 인스타 프로필로 이동한다.
  */
 export default function Portfolio({ portfolio }) {
   const { instagram = {}, galleryCount = 6 } = portfolio
@@ -22,7 +22,8 @@ export default function Portfolio({ portfolio }) {
     alt: item.title,
     localImage: item.image,
   }))
-  const tiles = (feed.tiles?.length ? feed.tiles : fallbackTiles).slice(0, Math.max(1, galleryCount))
+  // 인스타 사진이 모자라면(피드 실패, 사진 오류로 제외 등) 빈칸을 portfolio 사진으로 채운다
+  const tiles = [...(feed.tiles ?? []), ...fallbackTiles].slice(0, Math.max(1, galleryCount))
 
   return (
     <section id="portfolio" className="section" aria-labelledby="portfolio-title">

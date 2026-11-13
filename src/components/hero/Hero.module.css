@@ -77,6 +77,8 @@
 }
 
 .content {
+  position: relative;
+  z-index: 1; /* 꽃잎(Petals) 위 */
   padding-bottom: 56px;
   padding-top: 120px;
 }
@@ -109,6 +111,51 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+}
+
+.line {
+  display: block;
+}
+
+/* ---------- 글자 등장 효과 (hero.motion.textReveal) ----------
+   GPU가 바로 처리하는 transform·opacity만 움직인다 (글자 간격·흐림 애니메이션은 매 프레임 다시 그려서 느림).
+   제목은 투명도를 건드리지 않고 위치만 바꾼다: 첫 프레임부터 그려져서 LCP가 늦어지지 않는다. */
+.reveal .eyebrow {
+  animation: fade-up 0.9s var(--ease) 0.1s both;
+}
+
+.reveal .line {
+  animation: rise 1s var(--ease) calc(0.2s + var(--i) * 0.16s) both;
+}
+
+.reveal .sub {
+  animation: fade-up 0.9s var(--ease) 0.7s both;
+}
+
+.reveal .actions {
+  animation: fade-up 0.9s var(--ease) 0.85s both;
+}
+
+@keyframes rise {
+  from {
+    transform: translateY(0.6em);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal .eyebrow,
+  .reveal .line,
+  .reveal .sub,
+  .reveal .actions {
+    animation: none;
+  }
 }
 
 @media (min-width: 1024px) {

@@ -60,6 +60,10 @@
       "href": "#education"
     },
     "enable3D": false,
+    "motion": {
+      "petals": 18,
+      "textReveal": true
+    },
     "model": null,
     "flowerImage": null,
     "fallbackImage": "/images/work-rose-photozone.webp"

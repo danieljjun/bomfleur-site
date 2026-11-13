@@ -55,13 +55,16 @@
 - `src/data/image-manifest.json` 이미지 크기 정보 (`npm run images`가 생성)
 - `src/components/hero/` 히어로와 3D (`Hero3D`는 첫 화면이 그려진 뒤 지연 로딩, `hooks/useCan3D.js`)
   - `hero.enable3D: false`면 3D를 끄고(three.js 미로딩) 배경 정지 이미지만 보여준다. 꽃 사진도 빼려면 `hero.flowerImage: null`.
+  - 모션그래픽 `hero.motion`: `petals`(흩날리는 꽃잎 수, 0이면 끔, `Petals.jsx`), `textReveal`(글자 등장 효과). CSS 애니메이션만 쓰고 '동작 줄이기' 설정 시 꺼진다.
+    - 애니메이션은 transform·opacity만 쓴다(글자 간격·blur·filter 애니메이션은 매 프레임 다시 그려 TBT·CLS가 나빠짐). 제목(LCP)은 opacity를 건드리지 않는다.
+    - 꽃잎 배치는 고정 시드 난수로 만든다(서버 프리렌더와 같아야 하므로 Math.random 금지).
   - 3D 오브젝트 우선순위: `hero.model`(glb) → `hero.flowerImage`(배경을 오려낸 투명 webp, `FlowerImage.jsx`) → 기본 TorusKnot.
   - 사진 오브젝트는 앞면만 있으므로 회전시키지 않고 기울기(±20°)·둥실만 준다.
   - `hero.flowerImage`가 있으면 배경(`hero.fallbackImage`)은 항상 옅게 깔고, 같은 꽃 사진을 정지 이미지로 3D와 같은 자리에 둔다(`Hero.module.css` `.flower`). 3D 꽃이 준비되면 정지 꽃은 사라진다. 저사양·동작 줄이기에서는 정지 꽃이 그대로 보인다. 3D 위치·크기를 바꾸면 `.flower` 값도 함께 맞춘다.
   - 정지 꽃 사진이 LCP이므로 `<head>`에서 preload한다(`HERO_FLOWER_SIZES`).
 - `src/components/sections/` 일반 섹션 / `src/components/common/` 공용 컴포넌트 / `src/pages/` 별도 페이지
 - portfolio 섹션은 인스타그램 피드다. **빌드할 때** `scripts/fetch-instagram.mjs`가 `portfolio.instagram.feedUrl`(Behold JSON 피드)을 받아 `src/data/instagram-feed.json`에 저장하고, 사이트는 이 파일만 읽는다. 방문자 브라우저에서 피드를 요청하지 않는다(사진만 behold.pictures에서 받음).
-  - 수집 실패 시 직전 `instagram-feed.json`을 유지하고, 그것도 비어 있으면 `portfolio.items` 이미지로 대체한다. 표시 개수는 `portfolio.galleryCount`(기본 6), 모든 화면에서 3열.
+  - 수집 시 사진이 실제로 열리는지 확인해 오류(400 등) 게시물은 제외한다. 수집 실패 시 직전 `instagram-feed.json`을 유지하고, 인스타 사진이 표시 개수보다 적으면 빈칸을 `portfolio.items` 이미지로 채운다. 표시 개수는 `portfolio.galleryCount`(기본 6), 모든 화면에서 3열.
   - Behold 무료 플랜: 게시물 6개, 피드 요청 월 1,200회(초과 시 그달 정지), 하루 1회 갱신. 그래서 런타임 요청으로 되돌리지 않는다.
   - 피드 주소는 공개값이지만 Meta 액세스 토큰은 코드·client.json에 절대 넣지 않는다.
   - 외부 서비스를 추가·변경하면 `privacy.sections`의 자동 수집 항목도 함께 고친다.

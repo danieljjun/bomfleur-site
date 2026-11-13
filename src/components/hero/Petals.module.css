@@ -1,0 +1,65 @@
+.layer {
+  position: absolute;
+  inset: 0;
+  z-index: 0; /* 배경 위, 글자(.content) 아래 */
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* 바깥: 위에서 아래로 떨어지며 옆으로 흘러감 */
+.fall {
+  position: absolute;
+  top: 0;
+  left: var(--x);
+  will-change: transform;
+  animation: fall var(--duration) linear var(--delay) infinite;
+}
+
+/* 안쪽: 좌우로 흔들리며 회전 (나뭇잎처럼 팔랑이는 느낌) */
+.petal {
+  display: block;
+  width: var(--size);
+  height: calc(var(--size) * 1.33);
+  opacity: var(--opacity);
+  fill: var(--tone);
+  animation: sway var(--sway) ease-in-out var(--delay) infinite alternate;
+}
+
+.vein {
+  fill: none;
+  stroke: var(--color-surface);
+  stroke-width: 0.8;
+  stroke-linecap: round;
+  opacity: 0.5;
+}
+
+@keyframes fall {
+  from {
+    transform: translate3d(0, -10vh, 0) rotate(0deg);
+  }
+  to {
+    transform: translate3d(var(--drift), 110vh, 0) rotate(var(--spin));
+  }
+}
+
+@keyframes sway {
+  from {
+    transform: translateX(-14px) rotateY(0deg) rotateZ(-15deg);
+  }
+  to {
+    transform: translateX(14px) rotateY(60deg) rotateZ(15deg);
+  }
+}
+
+/* 모바일은 꽃잎 수를 절반으로 (홀수 번째만 남긴다) */
+@media (max-width: 767px) {
+  .fall:nth-child(even) {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .layer {
+    display: none;
+  }
+}

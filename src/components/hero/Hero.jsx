@@ -3,6 +3,7 @@ import { useCan3D } from '../../hooks/useCan3D.js'
 import { useInView } from '../../hooks/useInView.js'
 import { HERO_FLOWER_SIZES } from '../../lib/images.js'
 import Img from '../common/Img.jsx'
+import Petals from './Petals.jsx'
 import styles from './Hero.module.css'
 
 // three.js 번들은 따로, 첫 화면이 그려진 뒤에 불러온다(useCan3D). 그동안 정지 이미지가 보인다.
@@ -19,6 +20,9 @@ export default function Hero({ hero, brand }) {
   const show3D = hero.enable3D !== false && can3D && !fellBack
   // 꽃 사진이 있으면: 배경 사진은 옅게 깔고, 정지 꽃 사진을 보여주다가 3D 꽃이 준비되면 넘겨준다
   const hasFlower = Boolean(hero.flowerImage) && !hero.model
+  // 모션그래픽 설정 (client.json의 hero.motion): 꽃잎 수, 글자 등장 효과
+  const petalCount = hero.motion?.petals ?? 0
+  const reveal = hero.motion?.textReveal ? styles.reveal : ''
 
   const setRefs = (el) => {
     sectionRef.current = el
@@ -61,10 +65,17 @@ export default function Hero({ hero, brand }) {
         )}
       </div>
 
-      <div className={`container ${styles.content}`}>
+      {petalCount > 0 && <Petals count={petalCount} />}
+
+      <div className={`container ${styles.content} ${reveal}`}>
         {hero.eyebrow && <p className={styles.eyebrow}>{hero.eyebrow}</p>}
-        <h1 id="hero-title" className={`${styles.headline} pre-line`}>
-          {hero.headline}
+        <h1 id="hero-title" className={styles.headline}>
+          {/* 줄마다 따로 감싸서 한 줄씩 올라오게 한다 */}
+          {hero.headline.split('\n').map((line, i) => (
+            <span key={i} className={styles.line} style={{ '--i': i }}>
+              {line}
+            </span>
+          ))}
         </h1>
         {hero.subheadline && <p className={styles.sub}>{hero.subheadline}</p>}
         <div className={styles.actions}>
